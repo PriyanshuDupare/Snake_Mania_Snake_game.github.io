@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("../image/background.jpg");
+    min-height: 90vh;
+    background-size: 100vw 100vh; /* by these the snake will move towards the end*/
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+#board{
+    background: linear-gradient(rgb(27, 1, 23),rgb(163, 143, 33));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    margin: 15px 43px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: 3px 3px red;
+}
+.head{
+    background-color: rgb(247, 139, 7);
+    border: 0.25 vmin solid white;
+    transform: scale(1.2);
+    border-radius: 11px;
+}
+.snake{
+    background-color: rgb(186, 23, 186);
+    border: 0.25vmin solid black;
+    border-radius: 12px ;
+}
+.food{
+    background-color: yellow;
+    border-radius: 14px;
+    border: 0.25vmin solid black;
+}
+.heading{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    padding: 2px 2px ;
+    transform: translate(10px,10px);
+    text-shadow: 2px 2px black;
+    
+}
+.heading:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
